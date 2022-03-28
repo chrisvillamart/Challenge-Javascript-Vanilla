@@ -8,12 +8,6 @@ namespace Challenge.Controllers
 {
     public class PremiumController : ApiController
     {
-        // GET: api/Premium
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
 
         /// <summary>
         /// GET Premium
