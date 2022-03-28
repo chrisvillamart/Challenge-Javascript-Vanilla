@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Premium Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Premium Calculator</h2>
+        <div class="form-control">
+          <label for="dateOfBirth">Date of Birth</label>
+          <input type="date" id="dateOfBirth" name="trip-start">
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="state">State</label>
+            <input list="state" name="state" placeholder="Type or select" id="stateId">
+            <datalist id="state">
+            </datalist>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+            <label for="plan">Plan</label>
+            <input list="plan" name="plan" placeholder="Type or select" id="planId">
+            <datalist id="plan">
+                <option value="A">
+                <option value="B">
+                <option value="C">
+            </datalist>
+            <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="age">Age</label>
+          <input disabled
+            type="text"
+            id="age"
+            placeholder="Enter Age"
+            value="0"
+          />
+          <small>Error message</small>
+        </div>
+        <button type="submit">Get Premium</button>
+      </form>
+    </div>
+
+    <div class="pd-l" >
+        <div class="container" id="showDiv">
+            <select name="options" id="selectFreq">
+                <option value="" selected>Select</option>
+                <option value="m">Monthly</option>
+                <option value="q">Quarterly</option>
+                <option value="sa">Semi-Annual</option>
+                <option value="a">Annual</option>
+            </select>
+
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Carrier</th>
+                        <th>Premium</th>
+                        <th>Annual</th>
+                        <th>Monthly</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+  </body>
+</html>
